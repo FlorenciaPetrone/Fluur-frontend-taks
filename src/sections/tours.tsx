@@ -1,7 +1,9 @@
+import ToursSectionHeader from "../components/toursSectionHeader";
+
 const ToursSection = () => {
   return (
     <div className="tour-container">
-      <h1>tour section</h1>
+      <ToursSectionHeader />
     </div>
   );
 };
