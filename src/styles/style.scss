@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./partials/tourSection";
 
 html {
   margin: 0;
@@ -6,7 +7,9 @@ html {
 }
 
 html,
-body {
+body,
+#__next,
+.tour-container {
   height: 100%;
   font-family: "Montserrat", sans-serif;
 }
