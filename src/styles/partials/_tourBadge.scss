@@ -1,0 +1,16 @@
+.tour-badge {
+  display: flex;
+  align-items: center;
+  width: 47%;
+  margin: 0 auto;
+
+  &__img {
+    height: $size_base_multiplier * 3;
+    margin-right: $size_base_multiplier;
+  }
+
+  &__label {
+    margin: $size_base_multiplier 0;
+    height: 24px;
+  }
+}
