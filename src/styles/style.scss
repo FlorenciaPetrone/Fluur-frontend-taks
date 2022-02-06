@@ -1,0 +1,19 @@
+@import "./variables";
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body.body {
+  font-weight: $font_light;
+  font-size: $font_size;
+  color: $colors_text;
+  overflow: unset !important;
+}
