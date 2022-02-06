@@ -1,0 +1,84 @@
+.tour-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $colors_card_bg;
+  border-radius: $border_radius;
+  width: 377px;
+  padding: $size_base_multiplier * 3;
+  margin: $size_base_multiplier * 2;
+  position: relative;
+
+  &__img {
+    height: 247px;
+    width: 100%;
+  }
+
+  &__like-icon {
+    position: absolute;
+    top: $size_base_multiplier * 5;
+    right: $size_base_multiplier * 5;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: $border_radius;
+    background-color: $colors_card_bg;
+    width: 172px;
+    height: 60px;
+    position: absolute;
+    top: 235px;
+
+    &-label {
+      color: $colors_text_1;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 24.38px;
+    margin: 27px 0 0 0;
+  }
+
+  &__description {
+    text-align: center;
+    font-size: 18px;
+    padding: 0 6px;
+  }
+
+  &__details {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: $size_base_multiplier * 2;
+    width: 80%;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    &-rating {
+      color: $colors_text_1;
+      margin-left: $size_base_multiplier;
+    }
+
+    &-details {
+      padding: $size_base_multiplier $size_base_multiplier * 4;
+      border-radius: $border_radius;
+      background-color: $colors_button_bg;
+      margin: 0;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
