@@ -21,6 +21,11 @@ const TourCard = ({ tour }: TourCardProps) => {
   } = tour;
 
   const startingDate = new Date(startDates[0]);
+  const formatedPrice = new Intl.NumberFormat("en-EN", {
+    maximumSignificantDigits: 3,
+    style: "currency",
+    currency: "USD",
+  }).format(price);
 
   return (
     <div className="tour-card">
@@ -35,7 +40,7 @@ const TourCard = ({ tour }: TourCardProps) => {
         alt="like-icon"
       />
       <div className="tour-card__price">
-        <p className="tour-card__price-label">{`$${price} / night`}</p>
+        <p className="tour-card__price-label">{`${formatedPrice} / night`}</p>
       </div>
       <h3 className="tour-card__title">{name}</h3>
       <p className="tour-card__description">{summary}</p>

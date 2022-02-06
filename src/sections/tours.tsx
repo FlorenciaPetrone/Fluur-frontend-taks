@@ -6,6 +6,12 @@ const ToursSection = () => {
     <div className="tour-container">
       <ToursSectionHeader />
       <ToursSectionList />
+      <p
+        className="tour-container__button"
+        onClick={() => console.log("View All Tours")}
+      >
+        View All Tours
+      </p>
     </div>
   );
 };

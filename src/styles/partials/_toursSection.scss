@@ -1,3 +1,18 @@
 .tour-container {
   background-color: $colors_bg;
+  padding-bottom: $size_base_multiplier * 3;
+
+  &__button {
+    background-color: $colors_button_bg1;
+    color: white;
+    width: 263px;
+    font-size: $size_base_multiplier * 3;
+    border-radius: $border_radius;
+    text-align: center;
+    padding: $size_base_multiplier $size_base_multiplier * 2;
+    margin: $size_base_multiplier * 2 auto;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
